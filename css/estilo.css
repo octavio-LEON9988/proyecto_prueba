@@ -42,7 +42,9 @@ ul{
     padding-right: 30px;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 li a{
     text-decoration: none;
@@ -54,6 +56,85 @@ a:hover{
 }
 
 /* todo lo que está dentro del main */
+div.grid_container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "ca1 ca2 rd"
+    "rc rc rd"
+    "ra ra ra";
+    grid-gap: 5px;
+}
+
+
+
+.grid_item_a{
+    background-color: rgba(255, 251, 0, 0.705);
+    border: 3px solid rgb(62, 67, 68);
+    box-shadow: 2px 4px 15px black;
+    grid-area: ca1
+}
+.grid_item_b{
+    background-color: rgba(234, 0, 255, 0.685);
+    border: 3px solid rgb(62, 67, 68);
+    box-shadow: 2px 4px 15px black;
+    grid-area: ca2
+}
+.grid_item_c{
+    background-color: rgba(255, 0, 0, 0.568);
+    border: 3px solid rgb(62, 67, 68);
+    box-shadow: 2px 4px 15px black;
+    grid-area: rd
+}
+.grid_item_d{
+    background-color: rgba(117, 255, 5, 0.616);
+    border: 3px solid rgb(62, 67, 68);
+    box-shadow: 2px 4px 15px black;
+    grid-area: rc
+}
+.grid_item_e{
+    background-color: rgba(49, 248, 255, 0.596);
+    border: 3px solid rgb(62, 67, 68);
+    box-shadow: 2px 4px 15px black;
+    grid-area: ra
+}
+
+
+.grid_item_a:hover{
+    background-color: rgba(36, 113, 255, 0.37);
+    border: 3px solid white;
+    box-shadow: 2px 4px 15px black;
+}
+.grid_item_b:hover{
+    background-color: rgba(36, 113, 255, 0.37);
+    border: 3px solid white;
+    box-shadow: 2px 4px 15px black;
+}
+.grid_item_c:hover{
+    background-color: rgba(36, 113, 255, 0.37);
+    border: 3px solid white;
+    box-shadow: 2px 4px 15px black;
+}
+.grid_item_d:hover{
+    background-color: rgba(36, 113, 255, 0.37);
+    border: 3px solid white;
+    box-shadow: 2px 4px 15px black;
+}
+.grid_item_e:hover{
+    background-color: rgba(36, 113, 255, 0.37);
+    border: 3px solid white;
+    box-shadow: 2px 4px 15px black;
+}
+
+
+
+
+
+main.precios{
+    padding: 20px
+}
+
 main{
     background-color: rgba(169, 169, 169, 0.747);
     margin-top: 50px;
@@ -66,6 +147,44 @@ main{
     border-bottom: 3px dashed rgb(62, 67, 68);
 }
 
+section.contacto_facebook{
+    background-color: rgb(131, 131, 131);
+    border-radius: 5%;
+    border: 3px solid rgb(62, 67, 68);
+    max-width: 200px;
+    padding: 40px;
+    gap: 20px;
+    box-shadow: 2px 4px 15px black;
+}
+
+section.contacto_whatsapp{
+    background-color: rgb(131, 131, 131);
+    border-radius: 5%;
+    border: 3px solid rgb(62, 67, 68);
+    max-width: 200px;
+    padding: 40px;
+    gap: 20px;
+    box-shadow: 2px 4px 15px black;
+}
+
+section.contacto_instagram{
+    background-color: rgb(131, 131, 131);
+    border-radius: 5%;
+    border: 3px solid rgb(62, 67, 68);
+    max-width: 200px;
+    padding: 40px;
+    gap: 20px;
+    box-shadow: 2px 4px 15px black;
+}
+section.contacto_email{
+    background-color: rgb(131, 131, 131);
+    border-radius: 5%;
+    border: 3px solid rgb(62, 67, 68);
+    max-width: 200px;
+    padding: 40px;
+    gap: 20px;
+    box-shadow: 2px 4px 15px black;
+}
 
 section.inicio{
     background-color: rgb(131, 131, 131);
@@ -75,6 +194,7 @@ section.inicio{
     border-radius: 5%;
     border: 3px solid rgb(62, 67, 68);
     margin-top: 20px;
+    box-shadow: 2px 4px 15px black;
 }
 section.usuario{
     background-color: rgb(131, 131, 131);
@@ -87,10 +207,11 @@ section.usuario{
     height: 400px;
     padding: 40px;
     gap: 20px;
+    box-shadow: 2px 4px 15px black;
 }
 section.usuario:hover{
     color: rgb(255, 255, 255);
-    background-color: rgba(36, 113, 255, 0.432);
+    background-color: rgba(36, 113, 255, 0.37);
     border-color: white;
 }
 
@@ -100,13 +221,47 @@ section.inicio:hover{
     border-color: white;
 }
 
+section.contacto_facebook:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(36, 113, 255, 0.37);
+    border-color: white;
+}
+
+section.contacto_whatsapp:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 167, 0);
+    border-color: white;
+}
+
+section.contacto_instagram:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 162, 57);
+    border-color: white;
+}
+
+section.contacto_email:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 93, 93);
+    border-color: white;
+}
+
 div.icono_user{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-img{
+img.sobre_nosotros{
+    opacity: 30%;
+    border: 2px double white
+}
+
+img.sobre_nosotros:hover{
+    opacity: 100%;
+    border: 2px double white
+}
+
+img.inicio{
     float: left;
 padding-right: 10px;
 }
@@ -115,6 +270,58 @@ padding-right: 10px;
 footer{
     background-color: rgba(169, 169, 169, 0.911);
     border-top: 3px dashed rgb(62, 67, 68);
+    border-bottom: 3px dashed rgb(62, 67, 68);
     margin-top: 200px;
 }
 
+footer.contacto{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer_h5{
+    padding-top: 30px;
+}
+
+div.contactos_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* MediaQuerie */
+
+@media (max-width: 402px){
+    ul.responsive{
+        background-color:  rgb(133, 133, 133);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        min-height: 70px;
+        gap: 10px;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 750px){
+    div.grid_responsive{
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: 
+        "ca1 ca1 ca1"
+        "ca2 ca2 ca2"
+        "rc rc rd"
+        "ra ra ra";
+        grid-gap: 5px;
+    }
+}
